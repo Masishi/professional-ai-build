@@ -1,6 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight, Download, MapPin } from "lucide-react";
 import { profile, experience, softSkills } from "@/lib/profile";
+import photoAsset from "@/assets/nonhlanhla-sishi.png.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
