@@ -84,17 +84,21 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       {
         name: "description",
         content:
-          "Personal portfolio of Nonhlanhla Sishi, office administrator and client support professional in Johannesburg.",
+          "Portfolio of Nonhlanhla Sishi: call centre agent, teacher assistant and office administrator in Johannesburg with an NQF Level 4 Office Administration certificate.",
       },
       { name: "author", content: "Nonhlanhla Sishi" },
       { property: "og:title", content: "Nonhlanhla Sishi — Office Administration & Client Support" },
       {
         property: "og:description",
         content:
-          "Personal portfolio of Nonhlanhla Sishi, office administrator and client support professional in Johannesburg.",
+          "Portfolio of Nonhlanhla Sishi: call centre agent, teacher assistant and office administrator in Johannesburg with an NQF Level 4 Office Administration certificate.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "Nonhlanhla Sishi — Office Administration & Client Support" },
+      { name: "twitter:description", content: "Portfolio of Nonhlanhla Sishi: call centre agent, teacher assistant and office administrator in Johannesburg with an NQF Level 4 Office Administration certificate." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/31f556d622484a7d7cf56af76170b7da/id-preview-50f2feb9--ae45b783-a1b5-4c04-b4e6-35316725f9fd.lovable.app-1786703369091.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/31f556d622484a7d7cf56af76170b7da/id-preview-50f2feb9--ae45b783-a1b5-4c04-b4e6-35316725f9fd.lovable.app-1786703369091.png" },
     ],
     links: [
       {

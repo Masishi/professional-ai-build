@@ -16,7 +16,7 @@ export const Route = createFileRoute("/")({
       {
         property: "og:description",
         content:
-          "Six years of public-facing administration, client support and literacy facilitation. View projects, experience and contact details.",
+          "Portfolio of Nonhlanhla Sishi: call centre agent, teacher assistant and office administrator in Johannesburg with an NQF Level 4 Office Administration certificate.",
       },
     ],
   }),
