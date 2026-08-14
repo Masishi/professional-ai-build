@@ -1,6 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight, Download, MapPin } from "lucide-react";
 import { profile, experience, softSkills } from "@/lib/profile";
+import photoAsset from "@/assets/nonhlanhla-sishi.png.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -26,7 +27,7 @@ function Home() {
   return (
     <>
       <section className="hero-surface border-b border-border">
-        <div className="mx-auto grid max-w-6xl gap-10 px-5 py-16 sm:py-24 lg:grid-cols-[1.35fr_1fr] lg:items-center">
+        <div className="mx-auto grid max-w-6xl gap-10 px-5 py-16 sm:py-24 lg:grid-cols-[1.35fr_1fr] lg:items-start">
           <div>
             <p className="eyebrow">Hello, I&apos;m</p>
             <h1 className="mt-3 text-4xl font-semibold leading-[1.05] sm:text-6xl">
@@ -63,26 +64,36 @@ function Home() {
             </div>
           </div>
 
-          <div className="rounded-2xl border border-border bg-card p-6 shadow-soft">
-            <p className="eyebrow">At a glance</p>
-            <dl className="mt-4 grid grid-cols-2 gap-5">
-              <div>
-                <dt className="text-3xl font-semibold font-display">6+</dt>
-                <dd className="text-sm text-muted-foreground">years of work experience</dd>
-              </div>
-              <div>
-                <dt className="text-3xl font-semibold font-display">5</dt>
-                <dd className="text-sm text-muted-foreground">roles across public service &amp; education</dd>
-              </div>
-              <div>
-                <dt className="text-3xl font-semibold font-display">NQF 4</dt>
-                <dd className="text-sm text-muted-foreground">Office Administration certificate</dd>
-              </div>
-              <div>
-                <dt className="text-3xl font-semibold font-display">4</dt>
-                <dd className="text-sm text-muted-foreground">documented projects</dd>
-              </div>
-            </dl>
+          <div className="space-y-6">
+            <div className="overflow-hidden rounded-2xl border border-border bg-card shadow-soft">
+              <img
+                src={photoAsset.url}
+                alt={`Portrait of ${profile.name}`}
+                className="aspect-[4/5] w-full object-cover"
+              />
+            </div>
+
+            <div className="rounded-2xl border border-border bg-card p-6 shadow-soft">
+              <p className="eyebrow">At a glance</p>
+              <dl className="mt-4 grid grid-cols-2 gap-5">
+                <div>
+                  <dt className="text-3xl font-semibold font-display">6+</dt>
+                  <dd className="text-sm text-muted-foreground">years of work experience</dd>
+                </div>
+                <div>
+                  <dt className="text-3xl font-semibold font-display">5</dt>
+                  <dd className="text-sm text-muted-foreground">roles across public service &amp; education</dd>
+                </div>
+                <div>
+                  <dt className="text-3xl font-semibold font-display">NQF 4</dt>
+                  <dd className="text-sm text-muted-foreground">Office Administration certificate</dd>
+                </div>
+                <div>
+                  <dt className="text-3xl font-semibold font-display">4</dt>
+                  <dd className="text-sm text-muted-foreground">documented projects</dd>
+                </div>
+              </dl>
+            </div>
           </div>
         </div>
       </section>
